@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+/* VARIABLES */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* GLOBAL STYLES */
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background-color: var(--pale-blue);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* COMPONENTS STYLES */
+
+.order-summary {
+  width: 450px;
+  height: 697px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-summary .image-area img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.order-summary .content-area {
+  width: 450px;
+  height: 477px;
+  padding: 2.813rem 3rem 3rem 3rem;
+  background-color: var(--very-pale-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.content-area .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.063rem;
+  text-align: center;
+}
+
+.content-area .text h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  color: var(--dark-blue);
+  width: 100%;
+}
+
+.content-area .text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--desaturated-blue);
+  width: 100%;
+}
+
+.content-area .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.buttons .subscription {
+  width: 100%;
+  background: #3d66e0;
+  border-radius: 11px;
+  padding: 25px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons .payment-background {
+  width: 354px;
+  height: 50px;
+  background-color: #382ae1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+}
+
+.buttons .payment {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.938rem;
+  line-height: 20px;
+  color: #fff;
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.buttons .cancel {
+  display: inline-block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.938rem;
+  line-height: 20px;
+  color: var(--desaturated-blue);
+  text-align: center;
+}
