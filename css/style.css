@@ -47,53 +47,125 @@ body {
   align-items: center;
 }
 
-.order-summary .image-area img {
+.image-area img {
   width: 100%;
   display: block;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 1.25rem 1.25rem 0px 0px;
 }
 
-.order-summary .content-area {
+.content-area {
   width: 450px;
   height: 477px;
-  padding: 2.813rem 3rem 3rem 3rem;
-  background-color: var(--very-pale-blue);
+  padding: 3rem 3rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: space-between;
   gap: 1.25rem;
+  background-color: #ffffff;
 }
 
-.content-area .text {
+.content-area__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: space-between;
   gap: 1.063rem;
   text-align: center;
+  margin-top: -0.188rem;
 }
 
-.content-area .text h1 {
+.content-area__text h1 {
   font-style: normal;
   font-weight: 900;
-  font-size: 28px;
-  line-height: 37px;
+  font-size: 1.75rem;
+  line-height: 2.313rem;
   color: var(--dark-blue);
-  width: 100%;
 }
 
-.content-area .text p {
+.content-area__text p {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: var(--desaturated-blue);
-  width: 100%;
 }
 
-.content-area .buttons {
+.content-area__subscriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 2rem;
+}
+
+.content-area__subscriptions--plans {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, 1fr);
+
+  padding: 1.563rem 1.5rem;
+
+  background-color: var(--very-pale-blue);
+  border-radius: 0.688rem;
+  column-gap: 1.25rem;
+}
+
+.plans_el--1 {
+  grid-column: 1;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: center;
+}
+
+.plans_el--2 {
+  justify-self: start;
+  align-self: start;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.313rem;
+
+  color: var(--dark-blue);
+  vertical-align: top;
+}
+
+.plans_el--3:link,
+.plans_el--3:visited {
+  grid-column: 3;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+  text-decoration-line: underline;
+
+  color: var(--bright-blue);
+}
+
+.plans_el--3:hover,
+.plans_el--3:active {
+  color: #766cf1;
+}
+
+.plans_el--4 {
+  justify-self: start;
+  align-self: end;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.313rem;
+
+  color: var(--desaturated-blue);
+}
+
+.content-area__subscriptions--buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,44 +173,40 @@ body {
   gap: 2rem;
 }
 
-.buttons .subscription {
-  width: 100%;
-  background: #3d66e0;
-  border-radius: 11px;
-  padding: 25px 24px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.buttons .payment-background {
-  width: 354px;
-  height: 50px;
-  background-color: #382ae1;
-  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
-  border-radius: 11px;
-}
-
-.buttons .payment {
+.buttons_el--1:link,
+.buttons_el--1:visited {
   display: inline-block;
+  text-decoration: none;
+
   font-style: normal;
   font-weight: 900;
   font-size: 0.938rem;
-  line-height: 20px;
-  color: #fff;
-  margin: 15px auto;
-  width: 100%;
-  text-align: center;
+  line-height: 1.25rem;
+  color: #ffffff;
+
+  background: var(--bright-blue);
+  box-shadow: 0px 1.25rem 1.25rem hsla(245, 75%, 52%, 0.19);
+  border-radius: 0.688rem;
+  padding: 0.938rem 6.375rem;
 }
 
-.buttons .cancel {
+.buttons_el--1:hover,
+.buttons_el--1:active {
+  background: #766cf1;
+}
+
+.buttons_el--2:link,
+.buttons_el--2:visited {
   display: inline-block;
-  width: 100%;
+  text-decoration: none;
   font-style: normal;
   font-weight: 900;
   font-size: 0.938rem;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: var(--desaturated-blue);
-  text-align: center;
+}
+
+.buttons_el--2:hover,
+.buttons_el--2:active {
+  color: var(--dark-blue);
 }
