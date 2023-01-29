@@ -26,20 +26,25 @@ html {
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
-  background-color: var(--pale-blue);
 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background: url("../images/pattern-background-desktop.svg");
+  background-size: auto;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  background-color: var(--pale-blue);
 }
 
 /* COMPONENTS STYLES */
 
-.order-summary {
-  width: 450px;
-  height: 697px;
+.order-container {
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -48,20 +53,20 @@ body {
 }
 
 .image-area img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   border-radius: 1.25rem 1.25rem 0px 0px;
 }
 
 .content-area {
   width: 450px;
-  height: 477px;
+  height: 697px;
   padding: 3rem 3rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
   gap: 1.25rem;
   background-color: #ffffff;
 }
@@ -70,7 +75,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
   gap: 1.063rem;
   text-align: center;
   margin-top: -0.188rem;
@@ -96,7 +100,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
   gap: 2rem;
 }
 
@@ -143,14 +146,17 @@ body {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.188rem;
-  text-decoration-line: underline;
 
   color: var(--bright-blue);
+
+  text-underline-offset: 3px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }
 
 .plans_el--3:hover,
 .plans_el--3:active {
-  color: #766cf1;
+  color: hsl(245, 83%, 68%);
 }
 
 .plans_el--4 {
@@ -192,7 +198,7 @@ body {
 
 .buttons_el--1:hover,
 .buttons_el--1:active {
-  background: #766cf1;
+  background: hsl(245, 83%, 68%);
 }
 
 .buttons_el--2:link,
@@ -209,4 +215,16 @@ body {
 .buttons_el--2:hover,
 .buttons_el--2:active {
   color: var(--dark-blue);
+}
+
+@media screen and (max-width: 375px) {
+  .order-container {
+    width: 327px;
+    height: 567px;
+  }
+
+  .content-area {
+    width: 327px;
+    height: 407px;
+  }
 }
