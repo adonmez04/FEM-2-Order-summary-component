@@ -23,10 +23,10 @@ This project gave me lots of experience. I used flexbox and CSS Grid together as
 
 ### Useful resources
 
-1 - Quick book to collect some experience and refresh your memory.
+1 - Quick book to collect some experience and refresh your memory.  
 [25 HTML & CSS Hacks by HubSpot](https://offers.hubspot.com/html-css-hacks?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fwebsite%2Fcomment-out-in-css&hubs_signup-url=blog.hubspot.com%2Fwebsite%2Fcomment-out-in-css&hubs_signup-cta=cta_button&hsCtaTracking=cace6948-d859-40c5-ad73-a401be3aa84e%7Cddfcd1ff-a7fb-4fc9-a145-07d3927c0afc)
 
-2 - I love this trick, I'll add my coding style.
+2 - I love this trick, I'll add my coding style.  
 [The rem unit with ten base system](https://www.youtube.com/shorts/ajjIo7C1ylI)
 
 ## Author
