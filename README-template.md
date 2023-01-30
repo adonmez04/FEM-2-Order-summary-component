@@ -17,13 +17,15 @@
 - CSS Grid
 - BEM Notation
 
-### Improved my code
-
 ### What I learned
 
-## Acknowledgments
+This project gave me lots of experience. I used flexbox and CSS Grid together as the page layout. Maybe it wasn't necessary for this small project, but I needed to practice this special layout. Unfortunately, I couldn't get any comment on my work. For that, I checked other people's projects. It has been very useful for me. I compared some good projects with mine and commented on them. I think readable code is so important. Because if people don't understand your code, they cannot give any comments. Also, I should focus responsive design in a modern way. Because I don't want to use media property for every element. I saw some mobile-first design samples and it was amazing. It's such an easy way for responsive design. I'll upgrade the project this way within a few days.
 
 ### Useful resources
+
+[25 HTML & CSS Hacks by HubSpot](https://offers.hubspot.com/html-css-hacks?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fwebsite%2Fcomment-out-in-css&hubs_signup-url=blog.hubspot.com%2Fwebsite%2Fcomment-out-in-css&hubs_signup-cta=cta_button&hsCtaTracking=cace6948-d859-40c5-ad73-a401be3aa84e%7Cddfcd1ff-a7fb-4fc9-a145-07d3927c0afc)
+
+[The rem unit with ten base system](https://www.youtube.com/shorts/ajjIo7C1ylI)
 
 ## Author
 
