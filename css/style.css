@@ -2,7 +2,7 @@
 
 /* font-family: 'Red Hat Display', sans-serif; */
 
-/* VARIABLES */
+/* THE VARIABLES */
 :root {
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
@@ -11,7 +11,7 @@
   --dark-blue: hsl(223, 47%, 23%);
 }
 
-/* GLOBAL STYLES */
+/* THE GLOBAL STYLES */
 
 html {
   font-size: 16px;
@@ -41,7 +41,7 @@ body {
   background-color: var(--pale-blue);
 }
 
-/* COMPONENTS STYLES */
+/* THE COMPONENTS STYLES */
 
 .order-container {
   width: 450px;
@@ -57,11 +57,15 @@ body {
   border-radius: 20px;
 }
 
+/* Image Area */
+
 .image-area img {
   max-width: 100%;
   display: block;
   border-radius: 1.25rem 1.25rem 0px 0px;
 }
+
+/* Content Area */
 
 .content-area {
   max-width: 100%;
@@ -109,7 +113,7 @@ body {
   gap: 2rem;
 }
 
-/* The Grid Template (Start) */
+/* Annual Plan - Grid Template (Start) */
 
 .content-area__subscriptions--plans {
   display: grid;
@@ -179,7 +183,9 @@ body {
   color: var(--desaturated-blue);
 }
 
-/* The Grid Template (End) */
+/* Annual Plan - Grid Template (End) */
+
+/* Button Area */
 
 .content-area__subscriptions--buttons {
   display: flex;
@@ -188,8 +194,6 @@ body {
   align-items: center;
   gap: 2rem;
 }
-
-/* Buttons */
 
 .buttons_el--1:link,
 .buttons_el--1:visited {
