@@ -73,8 +73,6 @@ body {
   align-items: center;
   gap: 1.25rem;
   background-color: #ffffff;
-
-  background: #ffffff;
   border-radius: 20px;
 }
 
@@ -142,7 +140,6 @@ body {
   line-height: 1.313rem;
 
   color: var(--dark-blue);
-  vertical-align: top;
 }
 
 .plans_el--3:link,
