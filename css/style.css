@@ -34,7 +34,7 @@ body {
   align-items: center;
 
   background: url("../images/pattern-background-desktop.svg");
-  background-size: auto;
+  background-size: 1440px 437px;
   background-position: top;
   background-repeat: no-repeat;
 
@@ -51,6 +51,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  background: #ffffff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  border-radius: 20px;
 }
 
 .image-area img {
@@ -69,6 +73,10 @@ body {
   align-items: center;
   gap: 1.25rem;
   background-color: #ffffff;
+
+  background: #ffffff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  border-radius: 20px;
 }
 
 .content-area__text {
@@ -153,9 +161,9 @@ body {
   color: var(--bright-blue);
 
   /* The straight line */
-  text-underline-offset: 5px;
+  text-underline-offset: 3.5px;
   text-decoration-line: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1.5px;
 }
 
 .plans_el--3:hover,
@@ -223,13 +231,4 @@ body {
 .buttons_el--2:hover,
 .buttons_el--2:active {
   color: var(--dark-blue);
-}
-
-/* THE RESPONSIVE DESIGN */
-
-@media screen and (max-width: 375px) {
-  .order-container {
-    width: 327px;
-    height: 567px;
-  }
 }
