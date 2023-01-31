@@ -12,16 +12,22 @@
     />
 
     <title>2-Order summary component</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main class="order-container">
-      <!-- Image Area -->
-      <header class="image-area">
+      <!-- The Image Area -->
+      <div class="image-area">
         <img src="./images/illustration-hero.svg" alt="A woman who dances" />
-      </header>
-      <!-- Content Area -->
-      <article class="content-area">
+      </div>
+      <!-- The Content Area -->
+      <div class="content-area">
         <section class="content-area__text">
           <h1>Order Summary</h1>
           <p>
@@ -29,9 +35,9 @@
             any device anywhere you like!
           </p>
         </section>
-        <section class="content-area__subscriptions">
-          <!-- Annual Plan - Grid Template (Start) -->
-          <header class="content-area__subscriptions--plans">
+        <div class="content-area__subscriptions">
+          <!-- The Annual Plan - The Grid Template (Start) -->
+          <div class="content-area__subscriptions--plans">
             <img
               class="plans_el--1"
               src="./images/icon-music.svg"
@@ -40,16 +46,16 @@
             <p class="plans_el--2">Annual Plan</p>
             <a class="plans_el--3" href="#">Change</a>
             <p class="plans_el--4">$59.99/year</p>
-          </header>
-          <!-- Annual Plan - Grid Template (End) -->
+          </div>
+          <!-- The Annual Plan - The Grid Template (End) -->
 
-          <!-- Buttons Area -->
-          <section class="content-area__subscriptions--buttons">
+          <!-- The Button Area -->
+          <div class="content-area__subscriptions--buttons">
             <a class="buttons_el--1" href="#">Proceed to Payment</a>
             <a class="buttons_el--2" href="#">Cancel Order</a>
-          </section>
-        </section>
-      </article>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
