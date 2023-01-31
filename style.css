@@ -33,7 +33,7 @@ body {
 
 /* THE COMPONENTS STYLES */
 
-/* The Flexbox Template */
+/* The Flexbox Template - (Start) */
 
 .flexbox {
   display: flex;
@@ -42,7 +42,10 @@ body {
   align-items: center;
 }
 
+/* The Flexbox Template - (End) */
+
 .order-container {
+  /* Using The Flexbox Template */
   max-width: 28.125rem;
   background: #ffffff;
   box-shadow: 0px 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
@@ -60,6 +63,7 @@ body {
 /* The Content Area */
 
 .content-area {
+  /* Using The Flexbox Template */
   max-width: 100%;
   padding: 3rem 3rem;
   gap: 1.25rem;
@@ -68,6 +72,7 @@ body {
 }
 
 .content-area__text {
+  /* Using The Flexbox Template */
   gap: 1.063rem;
   text-align: center;
   margin-top: -0.188rem;
@@ -90,11 +95,12 @@ body {
 }
 
 .content-area__subscriptions {
+  /* Using The Flexbox Template */
   align-items: stretch;
   gap: 2rem;
 }
 
-/* The Annual Plan - The Grid Template (Start) */
+/* The Annual Plan - CSS Grid (Start) */
 
 .content-area__subscriptions--plans {
   display: grid;
@@ -164,11 +170,12 @@ body {
   color: var(--desaturated-blue);
 }
 
-/* The Annual Plan - The Grid Template (End) */
+/* The Annual Plan - CSS Grid (End) */
 
 /* The Button Area */
 
 .content-area__subscriptions--buttons {
+  /* Using The Flexbox Template */
   gap: 2rem;
 }
 
