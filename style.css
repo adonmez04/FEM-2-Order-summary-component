@@ -35,7 +35,11 @@ body {
 
 /* The Flexbox Template - (Start) */
 
-.flexbox {
+.card,
+.card__content,
+.text,
+.subscriptions,
+.subscriptions__button-option {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,7 +48,7 @@ body {
 
 /* The Flexbox Template - (End) */
 
-.order-container {
+.card {
   /* Using The Flexbox Template */
   max-width: 28.125rem;
   background: #ffffff;
@@ -54,7 +58,7 @@ body {
 
 /* The Image Area */
 
-.image-area img {
+.card__illustration img {
   max-width: 100%;
   display: block;
   border-radius: 1.25rem 1.25rem 0rem 0rem;
@@ -62,7 +66,7 @@ body {
 
 /* The Content Area */
 
-.content-area {
+.card__content {
   /* Using The Flexbox Template */
   max-width: 100%;
   padding: 3rem 3rem;
@@ -71,14 +75,14 @@ body {
   border-radius: 20px;
 }
 
-.content-area__text {
+.card__content .text {
   /* Using The Flexbox Template */
   gap: 1.063rem;
   text-align: center;
   margin-top: -0.188rem;
 }
 
-.content-area__text h1 {
+.card__content .text h1 {
   font-style: normal;
   font-weight: 900;
   font-size: 1.75rem;
@@ -86,7 +90,7 @@ body {
   color: var(--dark-blue);
 }
 
-.content-area__text p {
+.card__content .text p {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -94,7 +98,7 @@ body {
   color: var(--desaturated-blue);
 }
 
-.content-area__subscriptions {
+.card__content .subscriptions {
   /* Using The Flexbox Template */
   align-items: stretch;
   gap: 2rem;
@@ -102,7 +106,7 @@ body {
 
 /* The Annual Plan - CSS Grid (Start) */
 
-.content-area__subscriptions--plans {
+.subscriptions__price-option {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: repeat(2, 1fr);
@@ -114,14 +118,14 @@ body {
   column-gap: 1.25rem;
 }
 
-.plans_el--1 {
+.price-option--1 {
   grid-column: 1;
   grid-row: 1/-1;
   justify-self: center;
   align-self: center;
 }
 
-.plans_el--2 {
+.price-option--2 {
   justify-self: start;
   align-self: start;
 
@@ -133,8 +137,8 @@ body {
   color: var(--dark-blue);
 }
 
-.plans_el--3:link,
-.plans_el--3:visited {
+.price-option--3:link,
+.price-option--3:visited {
   grid-column: 3;
   grid-row: 1/-1;
   justify-self: center;
@@ -153,12 +157,12 @@ body {
   text-decoration-thickness: 1px;
 }
 
-.plans_el--3:hover,
-.plans_el--3:active {
+.price-option--3:hover,
+.price-option--3:active {
   color: hsl(245, 83%, 68%);
 }
 
-.plans_el--4 {
+.price-option--4 {
   justify-self: start;
   align-self: end;
 
@@ -174,13 +178,13 @@ body {
 
 /* The Button Area */
 
-.content-area__subscriptions--buttons {
+.subscriptions__button-option {
   /* Using The Flexbox Template */
   gap: 2rem;
 }
 
-.buttons_el--1:link,
-.buttons_el--1:visited {
+.button-option--1:link,
+.button-option--1:visited {
   display: inline-block;
   text-decoration: none;
 
@@ -196,13 +200,13 @@ body {
   padding: 0.938rem 6.375rem;
 }
 
-.buttons_el--1:hover,
-.buttons_el--1:active {
+.button-option--1:hover,
+.button-option--1:active {
   background: hsl(245, 83%, 68%);
 }
 
-.buttons_el--2:link,
-.buttons_el--2:visited {
+.button-option--2:link,
+.button-option--2:visited {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
@@ -212,7 +216,7 @@ body {
   color: var(--desaturated-blue);
 }
 
-.buttons_el--2:hover,
-.buttons_el--2:active {
+.button-option--2:hover,
+.button-option--2:active {
   color: var(--dark-blue);
 }
