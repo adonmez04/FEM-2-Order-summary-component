@@ -183,8 +183,8 @@ body {
   gap: 2rem;
 }
 
-.button-option--1:link,
-.button-option--1:visited {
+.button-option--submit:link,
+.button-option--submit:visited {
   display: inline-block;
   text-decoration: none;
 
@@ -200,13 +200,13 @@ body {
   padding: 0.938rem 6.375rem;
 }
 
-.button-option--1:hover,
-.button-option--1:active {
+.button-option--submit:hover,
+.button-option--submit:active {
   background: hsl(245, 83%, 68%);
 }
 
-.button-option--2:link,
-.button-option--2:visited {
+.button-option--cancel:link,
+.button-option--cancel:visited {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
@@ -216,7 +216,7 @@ body {
   color: var(--desaturated-blue);
 }
 
-.button-option--2:hover,
-.button-option--2:active {
+.button-option--cancel:hover,
+.button-option--cancel:active {
   color: var(--dark-blue);
 }
