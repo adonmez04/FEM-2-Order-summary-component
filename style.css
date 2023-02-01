@@ -104,8 +104,9 @@ body {
   gap: 2rem;
 }
 
-/* The Annual Plan - CSS Grid (Start) */
+/* The Price Option Area */
 
+/* The CSS Grid (Start) */
 .subscriptions__price-option {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -173,8 +174,7 @@ body {
 
   color: var(--desaturated-blue);
 }
-
-/* The Annual Plan - CSS Grid (End) */
+/* CSS Grid (End) */
 
 /* The Button Area */
 
