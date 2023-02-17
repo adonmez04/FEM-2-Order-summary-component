@@ -1,8 +1,8 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor - Order summary card v1.0
 
 **Table of Contents**
 
-- [Frontend Mentor - Order summary card](#frontend-mentor---order-summary-card)
+- [Frontend Mentor - Order summary card v1.0](#frontend-mentor---order-summary-card-v10)
   - [Welcome! 👋](#welcome-)
   - [Links](#links)
   - [Overview](#overview)
