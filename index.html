@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>2-Order summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <!-- The Image Area -->
+      <div class="card__illustration">
+        <img src="./images/illustration-hero.svg" alt="A woman who dances" />
+      </div>
+      <!-- The Content Area -->
+      <div class="card__content">
+        <section class="text">
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </section>
+        <div class="subscriptions">
+          <!-- The Price Option Area -->
+
+          <!-- The CSS Grid (Start) -->
+          <div class="subscriptions__price-option">
+            <img
+              class="price-option--1"
+              src="./images/icon-music.svg"
+              alt="The music icon"
+            />
+            <span class="price-option--2">Annual Plan</span>
+            <a class="price-option--3" href="#">Change</a>
+            <span class="price-option--4">$59.99/year</span>
+          </div>
+          <!-- The CSS Grid (End) -->
+
+          <!-- The Button Area -->
+          <div class="subscriptions__button-option">
+            <a class="button-option--submit" href="#">Proceed to Payment</a>
+            <a class="button-option--cancel" href="#">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

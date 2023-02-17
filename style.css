@@ -1,0 +1,222 @@
+/* THE GLOBAL STYLES */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url("./images/pattern-background-desktop.svg");
+  background-size: auto;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  background-color: var(--pale-blue);
+}
+
+/* THE COMPONENTS STYLES */
+
+/* The Flexbox Template - (Start) */
+
+.card,
+.card__content,
+.text,
+.subscriptions,
+.subscriptions__button-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The Flexbox Template - (End) */
+
+.card {
+  /* Using The Flexbox Template */
+  max-width: 28.125rem;
+  background: #ffffff;
+  box-shadow: 0px 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+  border-radius: 1.25rem;
+}
+
+/* The Image Area */
+
+.card__illustration img {
+  max-width: 100%;
+  display: block;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+}
+
+/* The Content Area */
+
+.card__content {
+  /* Using The Flexbox Template */
+  max-width: 100%;
+  padding: 3rem 3rem;
+  gap: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.card__content .text {
+  /* Using The Flexbox Template */
+  gap: 1.063rem;
+  text-align: center;
+  margin-top: -0.188rem;
+}
+
+.card__content .text h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 2.313rem;
+  color: var(--dark-blue);
+}
+
+.card__content .text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--desaturated-blue);
+}
+
+.card__content .subscriptions {
+  /* Using The Flexbox Template */
+  align-items: stretch;
+  gap: 2rem;
+}
+
+/* The Price Option Area */
+
+/* The CSS Grid (Start) */
+.subscriptions__price-option {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, 1fr);
+
+  padding: 1.563rem 1.5rem;
+
+  background-color: var(--very-pale-blue);
+  border-radius: 0.688rem;
+  column-gap: 1.25rem;
+}
+
+.price-option--1 {
+  grid-column: 1;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: center;
+}
+
+.price-option--2 {
+  justify-self: start;
+  align-self: start;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.313rem;
+
+  color: var(--dark-blue);
+}
+
+.price-option--3:link,
+.price-option--3:visited {
+  grid-column: 3;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+
+  color: var(--bright-blue);
+
+  /* The straight line */
+  text-underline-offset: 3.5px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.price-option--3:hover,
+.price-option--3:active {
+  color: hsl(245, 83%, 68%);
+}
+
+.price-option--4 {
+  justify-self: start;
+  align-self: end;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.313rem;
+
+  color: var(--desaturated-blue);
+}
+/* CSS Grid (End) */
+
+/* The Button Area */
+
+.subscriptions__button-option {
+  /* Using The Flexbox Template */
+  gap: 2rem;
+}
+
+.button-option--submit:link,
+.button-option--submit:visited {
+  display: inline-block;
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+
+  background: var(--bright-blue);
+  box-shadow: 0px 1.25rem 1.25rem hsla(245, 75%, 52%, 0.19);
+  border-radius: 0.688rem;
+  padding: 0.938rem 6.375rem;
+}
+
+.button-option--submit:hover,
+.button-option--submit:active {
+  background: hsl(245, 83%, 68%);
+}
+
+.button-option--cancel:link,
+.button-option--cancel:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
+  color: var(--desaturated-blue);
+}
+
+.button-option--cancel:hover,
+.button-option--cancel:active {
+  color: var(--dark-blue);
+}
